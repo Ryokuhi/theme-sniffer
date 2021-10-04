@@ -230,11 +230,11 @@ class Parser {
 			$value = null;
 			if ( false === strpos( $line, ':' ) ) {
 
-				// Some plugins have line-breaks within the headers.
+				// Some themes have line-breaks within the headers.
 				if ( empty( $line ) ) {
-					break;
-				} else {
 					continue;
+				} else {
+					break;
 				}
 			}
 
